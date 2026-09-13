@@ -1,0 +1,20 @@
+{
+  "name": "task_3",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start-dev": "webpack serve --mode development --open"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.110.3",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "lodash": "^4.17.21"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack": "^5.110.3",
+    "webpack-cli": "^7.2.3"
+  },
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "lodash": "^4.17.21"
+  }
+}
