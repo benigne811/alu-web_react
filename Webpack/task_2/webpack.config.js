@@ -1,5 +1,4 @@
 const path = require('path');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -17,19 +16,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: { progressive: true, quality: 70 },
+              optipng: { enabled: false },
+              pngquant: { enabled: false },
+              gifsicle: { interlaced: false },
+              webp: { quality: 70 },
+            },
+          },
+        ],
       },
-    ],
-  },
-  optimization: {
-    minimizer: [
-      '...',
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.sharpMinify,
-          options: { encodeOptions: { jpeg: { quality: 70 } } },
-        },
-      }),
     ],
   },
   performance: {
