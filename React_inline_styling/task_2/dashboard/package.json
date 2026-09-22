@@ -1,0 +1,7 @@
+{
+  "name": "react-inline-styling-task-2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"start":"react-scripts start","build":"react-scripts build","test":"react-scripts test --watchAll=false"},
+  "dependencies": {"@testing-library/jest-dom":"^5.17.0","@testing-library/react":"^13.4.0","aphrodite":"^2.4.0","prop-types":"^15.8.1","react":"^18.2.0","react-dom":"^18.2.0","react-scripts":"^5.0.1"}
+}
