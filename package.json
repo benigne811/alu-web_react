@@ -15,5 +15,8 @@
     "url": "https://github.com/benigne811/alu-web_react/issues"
   },
   "homepage": "https://github.com/benigne811/alu-web_react#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "immutable": "^5.1.4"
+  }
 }
